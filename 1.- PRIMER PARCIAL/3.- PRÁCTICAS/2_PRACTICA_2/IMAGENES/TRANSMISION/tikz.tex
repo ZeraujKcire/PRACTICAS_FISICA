@@ -1,0 +1,24 @@
+\documentclass[margin=0.05in]{standalone}
+\input{preamble.tex}
+\begin{document}
+
+\begin{tikzpicture}[>=latex,scale=1.2]
+	\fill [gray!30] (0,0) -- (1,2) -- (2,2) -- (2,0) -- cycle;
+	\draw [thick] (0,0) -- (1,2);
+	\def\r{0.6}
+	\coordinate (A) at (\r,2*\r);
+	\draw (A) --++ (155:9mm);
+	\draw (A) --++ (155:-9mm);
+	\draw [rotate around = {-25:(A)}] (A) rectangle ++(0.08,-0.08);
+	\draw [semithick , red] (A) --++ (180:1cm);
+	\draw [semithick , green!60!blue] (A) --++ (-15:1.4cm);
+	% \draw [semithick , red] (A) --++ (130:1cm);
+	\draw [thin, red] (A)++(-0.4,0) arc (180:155: 0.4 cm);
+	\begin{scope}[shift={(A)}]
+		\node [red] at (170:5.5mm) {\tiny \(\theta _i\)};
+		\draw [thin, green!60!blue] (-25:8mm) arc (-25:-15: 8mm) node [below right] {\tiny \(\theta _t\)};
+		% \node [red] at (140:5.5mm) {\tiny \(\theta _r\)};
+	\end{scope}
+\end{tikzpicture}
+
+\end{document}

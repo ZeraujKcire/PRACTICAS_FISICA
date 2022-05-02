@@ -1,0 +1,30 @@
+\documentclass{standalone}
+\usepackage{tikz}
+
+%: === TIPOGRAFÍA === (((
+\usepackage{fontspec}
+\setmainfont[
+  BoldFont       = bodonibi,
+	ItalicFont     = Century modern italic2.ttf,
+	BoldItalicFont = bodonibi,
+	SmallCapsFont  = lmromancaps10-regular.otf
+]{Century_modern.ttf}
+\DeclareSymbolFont{italics}{\encodingdefault}{\rmdefault}{m}{it}
+\DeclareSymbolFontAlphabet{\mathit}{italics}
+\ExplSyntaxOn
+\int_step_inline:nnnn { `A } { 1 } { `Z }
+ {  \exp_args:Nf \DeclareMathSymbol{\char_generate:nn{#1}{11}}{\mathalpha}{italics}{#1} }
+\int_step_inline:nnnn { `a } { 1 } { `z } {  \exp_args:Nf \DeclareMathSymbol{\char_generate:nn{#1}{11}}{\mathalpha}{italics}{#1}}
+\ExplSyntaxOff
+% )))
+
+\begin{document}
+
+\begin{tikzpicture}[>=latex]
+	\draw (-3,0) -- (3,0) (0,-3) -- (0,3);
+	\draw [very thick , orange ,->] (0,0) -- (0,2) node [right] {\(\vec{T}\)};
+	\draw [very thick , blue, ->] (0,0) -- (0,-2) node [right] {\(\vec{w} = m \cdot \vec{g}\)};
+	\node [below left] at (0,0) {\(O\)};
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,27 @@
+\documentclass[margin=0.1mm]{standalone}
+\input{preamble.tex}
+\begin{document}
+
+\begin{tikzpicture}[>=latex]
+	\def\angle{26.565}
+	\def\rad{3.354101}
+	\coordinate (F) at (-2,0);
+	\draw [thick] (-3,0) -- (3,0);
+	\begin{scope}[rotate around = {55:(F)}]
+		\filldraw [semithick, fill=gray!20] (0,-1.5) arc (-\angle:\angle: \rad cm) (0,1.5) arc (180-\angle:180+\angle: \rad cm);
+		% \draw [semithick, red,|-|] (F) -- (0,0);
+		\foreach \n in {-4,...,4} {
+			\draw [gray] (F) -- (-{sqrt(\rad*\rad-\n*\n/9) +3} ,\n/3);
+		}
+		\fill (F) circle (1.5pt) node [below] {\(F_i\)};
+		\draw [dash pattern = on 6pt off 2pt,blue, semithick] (0,-1.8) -- (0,1.8);
+		\draw [yshift=-2mm,snake = brace, mirror snake, red, semithick] (F) ++ (0,-2mm) to node [midway, below right] {\(f\)} (0,0);
+		\clip (0,1.5) arc (180-\angle:180+\angle: \rad cm) (0,-1.5) --++ (3.5,0) --++ (0,3) -- (0,1.5);
+		\foreach \n in {-4,...,4} {
+			\draw [gray] (-0.5,\n/3) --++ (4,0);
+			\draw [gray, ->] (3.5,\n/3) --++ (-2,0);
+		}
+	\end{scope}
+\end{tikzpicture}
+
+\end{document}

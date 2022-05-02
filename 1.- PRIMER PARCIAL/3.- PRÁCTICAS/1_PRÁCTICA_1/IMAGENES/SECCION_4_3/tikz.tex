@@ -1,0 +1,30 @@
+\documentclass[margin=0.3in]{standalone}
+\input{preamble.tex}
+\begin{document}
+
+\begin{tikzpicture}[>=latex, xscale=5]
+	\draw [gray!30, xscale=0.5] (0,0) grid (6,15);
+	\draw [->] (-0.5,0) -- (3,0) node [right=5mm] {\huge \(10 \cdot T\) \((seg)\)};
+	\draw [->] (0,-1) -- (0,15) node [above=2mm] {\huge \(\lambda\) \((cm)\)};
+	\coordinate (A) at (2.53, 13);
+	\coordinate (B) at (1.69, 6.4);
+	\coordinate (C) at (1.93, 8.5);
+	\coordinate (D) at (2.26, 7);
+	\coordinate (E) at (1.36, 6.5);
+	\foreach \n in {A,...,E} \fill (\n) ellipse (0.8pt and 4pt);
+	\foreach \n in {1,...,7} \draw (0,2*\n) --++ (-0.1,0) node [left] {\huge \(\n\)};
+	\foreach \n in {0.5,1,...,2.5} \draw (\n,0) --++ (0,-0.5) node [below] {\huge \(\n\)};
+	\draw [ultra thick , blue, domain=0:3] plot(\x , {-0.64+4.56*\x}) node [above=5mm] {\huge \(y=(22.83cm/s)x-0.32cm\)};
+	% \foreach \punto/\m in {
+		% \draw [orange, very thick, -|] (2.53 , 2*6.5  ) --++ (0,2*0.12 cm);
+		% \draw [orange, very thick, -|] (1.69 , 2*3.2  ) --++ (0,2*0.07 cm);
+		% \draw [orange, very thick, -|] (1.93 , 2*4.25 ) --++ (0,2*0.09 cm);
+		% \draw [orange, very thick, -|] (2.26 , 2*3.5  ) --++ (0,2*0.08 cm);
+		% \draw [orange, very thick, -|] (1.36 , 2*3.25 ) --++ (0,2*0.07 cm);
+	% }{
+		% \draw [-|, thick ,orange] \punto --++ (0,\m);
+		% \draw [-|, thick ,orange] \punto --++ (0,-1*\m);
+	% }
+\end{tikzpicture}
+
+\end{document}

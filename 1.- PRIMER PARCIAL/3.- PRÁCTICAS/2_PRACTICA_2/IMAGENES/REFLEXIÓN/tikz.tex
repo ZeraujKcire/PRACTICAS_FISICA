@@ -1,0 +1,33 @@
+\documentclass[margin=0.05in]{standalone}
+\input{preamble.tex}
+\begin{document}
+
+\begin{tikzpicture}[>=latex,scale=1.2]
+	% \fill [blue!20] (-3,0) arc (180:130: 3 cm) --++ 
+	% (1,0) --++
+	% (0,{-3*sin(130)}) -- cycle;
+	% \draw [rotate=-30] (-3,0) rectangle ++(0.1,-0.1);
+	% \draw [thick] (-3,0) arc (180:130: 3 cm);
+	% \draw ({2.3*cos(150)} , {2.3*sin(150)}) -- ({3.8*cos(150)} , {3.8*sin(150)});
+	% \draw [semithick , red] ({3*cos(150)} , {3*sin(150)}) --++ (-1.5,0);
+	% \draw [semithick , red] ({3*cos(150)} , {3*sin(150)}) --++ (120:1.3cm);
+	% \draw [very thin, red] ({3*cos(150) - 0.3} , {3*sin(150)}) arc (180:120: 0.3 cm);
+	% \node [red] at ({3*cos(150) -0.5} , {3*sin(150) +0.14}) {\tiny \(\theta_i\)};
+	% \node [red] at ({3*cos(150) -0.38} , {3*sin(150) +0.4}) {\tiny \(\theta_r\)};
+	\fill [gray!30] (0,0) -- (1,2) -- (1,0) -- cycle;
+	\draw [thick] (0,0) -- (1,2);
+	\def\r{0.6}
+	\coordinate (A) at (\r,2*\r);
+	\draw (A) --++ (155:9mm);
+	\draw (A) --++ (155:-4.5mm);
+	\draw [rotate around = {-25:(A)}] (A) rectangle ++(0.08,-0.08);
+	\draw [semithick , red] (A) --++ (180:1cm);
+	\draw [semithick , red] (A) --++ (130:1cm);
+	\draw [thin, red] (A)++(-0.4,0) arc (180:130: 0.4 cm);
+	\begin{scope}[shift={(A)}]
+		\node [red] at (170:5.5mm) {\tiny \(\theta _i\)};
+		\node [red] at (140:5.5mm) {\tiny \(\theta _r\)};
+	\end{scope}
+\end{tikzpicture}
+
+\end{document}

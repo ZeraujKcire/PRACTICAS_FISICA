@@ -1,0 +1,100 @@
+
+%: === PAQUETES === (((
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+% \usepackage{expl3}
+\usepackage{fontspec}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{titlesec} 
+\usepackage{multicol}
+\usepackage[shortlabels]{enumitem}
+% \usepackage{setspace}
+% \usepackage{dsfont}
+% \usepackage{bookmark}
+% )))
+
+%: === TIPOGRAFÍA === (((
+\setmainfont[
+  BoldFont       = bodonibi,
+	ItalicFont     = Century modern italic2.ttf,
+	BoldItalicFont = bodonibi,
+	SmallCapsFont  = lmromancaps10-regular.otf
+]{Century_modern.ttf}
+% )))
+
+%: === COMANDOS === (((
+\newcommand{\dis}{\displaystyle}
+\newcommand{\qed}{\hspace{0.5cm}\rule{0.16cm}{0.4cm}}
+\newcommand{\micita}[1]{\([\)\cite{#1}\(]\)} 
+\newcommand{\operator}[1]{\mathop{\vphantom{\sum}\mathchoice{ \vcenter{\hbox{\huge $#1$}} }
+{\vcenter{ \hbox{\Large $#1$}} }{#1}{#1}}\displaylimits}
+\newcommand{\suma}{\operator{ \includegraphics[scale=0.09]{IMAGENES/Sigma.png}} }
+\DeclareSymbolFont{italics}{\encodingdefault}{\rmdefault}{m}{it}
+\DeclareSymbolFontAlphabet{\mathit}{italics}
+\ExplSyntaxOn
+\int_step_inline:nnnn { `A } { 1 } { `Z }
+ {  \exp_args:Nf \DeclareMathSymbol{\char_generate:nn{#1}{11}}{\mathalpha}{italics}{#1} }
+\int_step_inline:nnnn { `a } { 1 } { `z } {  \exp_args:Nf \DeclareMathSymbol{\char_generate:nn{#1}{11}}{\mathalpha}{italics}{#1}}
+\ExplSyntaxOff
+% )))
+
+%: === SECCIONES === (((
+\titleformat*{\section}{\large\normalfont\bfseries}
+\titleformat*{\subsection}{\large\itshape \centering}
+% \setcounter{secnumdepth}{0}
+\renewcommand*{\contentsname}{\large\textbf{CONTENIDOS.}}
+\usepackage[nottoc,numbib]{tocbibind}
+\renewcommand{\refname}{REFERENCIAS.}
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\figurename}{Figura}
+% )))
+
+% === PORTADA === (((
+% \pagestyle{empty}
+\newcommand{\portada}{
+\addfontfeature{LetterSpace=-5}
+  \begin{titlepage}
+  \centering
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{IMAGENES/logo_uaa.png}  
+  \end{figure}
+  {\bfseries\Large\MakeUppercase{\textit{Universidad Autónoma de Aguascalientes.}} \par}
+  \vspace{1cm}
+  {\Large Centro de Ciencias Básicas. \vspace{0.5cm}\\[2mm]
+  Departamento de Matemáticas y Física.\vspace{0.5cm}\\[2mm]
+  Licenciatura en Matemáticas Aplicadas.\vspace{0.5cm}\\[2mm]
+  Práctica 3.\par}
+  \vspace{1.5cm}
+  {\bfseries\Huge Lentes Delgadas. \par} % title
+  \vspace{1.5cm}
+  {\itshape\Large Óptica. \\Prof. Mariana Alfaro Gómez.\par}
+  % {\itshape\Large Variable Compleja I. \\Prof. Fausto Arturo Contreras Rosales.\par}
+  % {\itshape\Large Métodos Numéricos II. \\Prof. Manuel Ramírez Aranda.\par}
+  % {\itshape\Large Diseño de Experimentos. \\Prof. Angélica Hernández Quintero.\par}
+  % {\itshape\Large Filosofía de la Investigación Científica. \\Prof. Jesús Mariano Rodríguez Muñoz.\par}
+  \vfill
+  % {\Large \textit{Por Erick I. Rodríguez Juárez.}\par}
+		\begin{flushleft}
+		\Large
+		Alumnos:\\
+		\textit{Carlos Francisco Guzmán Barba.}\\
+		\textit{Erick Ignacio Rodríguez Juárez.}\\
+		\textit{Manuel Alejandro Siller Landin.}
+		\end{flushleft}
+	% {}  % {\Large \textit{Por Erick I. Rodríguez Juárez.}\par}
+  \vfill
+		\begin{flushright}
+		{\Large Realización: 14\(/\)03\(/\)22. \par} % date
+		{\Large Entrega: 28\(/\)03\(/\)22. \par} % date
+		\end{flushright}
+  \end{titlepage} 
+	% \thispagestyle{empty}
+	% \doublespacing
+	% \tableofcontents
+	% \singlespacing
+	% \newpage
+} 
+% )))

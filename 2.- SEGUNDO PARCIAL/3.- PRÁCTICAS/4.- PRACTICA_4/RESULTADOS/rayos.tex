@@ -1,0 +1,75 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{arrows.meta}
+\pagestyle{empty}
+\begin{document}
+	
+	\definecolor{qqzzff}{rgb}{0.,0.6,1.}
+	\definecolor{ccqqqq}{rgb}{0.8,0.,0.}
+	\definecolor{qqzzcc}{rgb}{0.,0.6,0.8}
+	\definecolor{qqzzqq}{rgb}{0.,0.6,0.}
+	\definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+	\definecolor{ffzztt}{rgb}{1.,0.6,0.2}
+	\definecolor{ffqqqq}{rgb}{1.,0.,0.}
+	\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1.}
+	\begin{tikzpicture}[line cap=round,line join=round,x=0.11711711711711711cm,y=0.375cm, >=latex]
+		\begin{axis}[
+			x=0.11711711711711711cm,y=0.375cm,
+			axis lines=middle,
+			xmin=-8.0,
+			xscale=1.7,
+			xmax=83,
+			ymin=-20.0,
+			ymax=20.0,
+			xtick={-5.0,0.0,...,100.0},
+			ytick={-20.0,-15.0,...,20.0},]
+			\clip(-8.,-20.) rectangle (83.,20.);
+			\draw [line width=0.8pt] (43.15,-20.) -- (43.15,20.);
+			\draw [line width=0.8pt] (14.85,-20.) -- (14.85,20.);
+			\draw [->,line width=0.4pt,color=qqzzqq] (70.,-10.) -- (43.15,5.934718100890208);
+			\draw [->,line width=0.4pt,color=qqzzqq] (43.15,5.9347181008902075) -- (27.215281899109794,5.9347181008902075);
+			\draw [->,line width=0.4pt,color=qqzzcc] (70.,-10.) -- (43.15,-10.);
+			\draw [->,line width=0.4pt,color=qqzzcc] (43.15,-10.) -- (27.215281899109794,5.934718100890208);
+			\draw [->,line width=0.4pt,color=ccqqqq] (70.,-10.) -- (27.215281899109797,5.934718100890208);
+			\draw [->,line width=1.2pt,] (70.,0.) -- (70.,-10.);
+			\fill [rotate around={90.:(43.15,0.)},line width=2.pt,color=qqzzff,qqzzff,opacity=0.5] (43.15,0.) ellipse (7cm and 0.15cm);
+			\fill [rotate around={90.:(14.85,0.)},line width=2.pt,color=qqzzff,qqzzff,opacity=0.5] (14.85,0.) ellipse (7cm and 0.15cm);
+			\draw [line width=0.4pt,dash pattern=on 4pt off 4pt,color=ccqqqq] (27.215281899109794,5.9347181008902075)-- (47.24224221695364,15.546659411558942);
+			\draw [->,line width=0.4pt,color=ccqqqq] (27.215281899109794,5.9347181008902075) -- (14.85,0.);
+			\draw [line width=0.4pt,color=ccqqqq,domain=-8.0:14.85] plot(\x,{(--105.83979266156318-7.127258765088429*\x)/-14.85});
+			\draw [->,line width=0.4pt,color=qqzzcc] (27.215281899109794,5.9347181008902075) -- (14.85,5.9347181008902075);
+			\draw [->,line width=0.4pt,color=qqzzcc] (14.85,5.9347181008902075) -- (-5.15,0.);
+			\draw [line width=0.4pt,color=qqzzcc,domain=-8.0:-5.15] plot(\x,{(-28.855345912656155-5.602979788865272*\x)/-18.882041888475968});
+			\draw [line width=0.4pt,dash pattern=on 4pt off 4pt,color=qqzzcc] (14.85,5.9347181008902075)-- (47.24224221695364,15.546659411558942);
+			\draw [line width=0.4pt,dash pattern=on 4pt off 4pt,color=qqzzqq] (14.85,15.546659411558943)-- (47.24224221695364,15.546659411558942);
+			\draw [line width=0.4pt,dash pattern=on 4pt off 4pt,color=qqzzqq] (34.85,0.)-- (27.215281899109794,5.9347181008902075);
+			\draw [->,line width=0.4pt,color=qqzzqq] (27.215281899109794,5.9347181008902075) -- (14.85,15.546659411558945);
+			\draw [->,line width=0.4pt,color=qqzzqq] (14.85,15.546659411558943) -- (0.,15.546659411558943);
+			\draw [line width=0.4pt,color=qqzzqq,domain=-8.0:0.0] plot(\x,{(-126.34216125881956-0.*\x)/-8.12664366757042});
+			\draw [->,line width=1.2pt,color=ffzztt] (27.215281899109794,0.) -- (27.215281899109794,5.9347181008902075);
+			\draw [->,line width=1.2pt,color=ffzzqq] (47.24224221695364,0.) -- (47.24224221695364,15.546659411558942);
+			\draw (98,1) node[anchor=north west] {$cm$};
+			\draw (0.08,20) node[anchor=north west] {$cm$};
+			\draw [fill=ududff] (33.15,0) ellipse (0.5 mm and 0.85 mm);
+			\draw [fill=ududff] (53.15,0) ellipse (0.5mm and 0.85 mm);
+			\draw [fill=ffqqqq] (70.,-10) ellipse (0.5mm and 0.85 mm);
+			\draw [fill=ffqqqq] (47.24,15.55) ellipse (0.5mm and 0.85 mm);
+			\draw [fill=ududff] (-5.15,0) ellipse (0.5mm and 0.85 mm);
+			\draw [fill=ududff] (34.85,0) ellipse (0.5mm and 0.85 mm);
+			\draw [fill=ffqqqq] (47.24224221695364,15.546659411558942) [radius=1.5pt];
+			\begin{scriptsize}
+				\draw[color=ududff] (53.999740455821986,0.5) node [above] {\large{$f_{o}$}};
+				\draw[color=ffqqqq] (70.47583595356106,-11) node {\large $O$};
+				\draw[color=ududff] (-5.6,0.5) node [above] {\large{$f_{e}$}};
+				\draw[color=ududff] (35.684955963805685,0.5) node [above right] {\large{$f_{e}$}};
+				\draw[color=ffqqqq] (47.978935317698514,16.715013251133364) node [above] {\large $Im$};
+				\draw[color=ududff] (32.95442514566241,0.5368171251964973) node [above left] {\large{$f_{o}$}};
+				\draw[color=qqzzff] (46,-16) node {\large$L_o$};
+				\draw[color=qqzzff] (18,-16) node {\large$L_e$};
+			\end{scriptsize}
+		\end{axis}
+	\end{tikzpicture}
+\end{document}

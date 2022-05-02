@@ -1,0 +1,22 @@
+\documentclass[margin=0.3in]{standalone}
+\input{preamble.tex}
+\begin{document}
+
+\begin{tikzpicture}[>=latex, yscale=0.2]
+	\draw [gray!30, xscale=2, yscale=5, xshift=-0.5cm] (8,3) grid (16,11);
+	\draw [->] (14,15) --++ (18,0) node [right] {\huge \(f\) (\(Hz\))};
+	\draw [->] (15,12) -- (15,60) node [above] {\huge \(v\) (\(cm/seg\))};
+	\coordinate (A) at (17, 44.2);
+	\coordinate (B) at (19, 47.5);
+	\coordinate (C) at (21, 50.4);
+	\coordinate (D) at (23, 48.3);
+	\coordinate (E) at (25, 50);
+	\coordinate (F) at (27, 45.9);
+	\coordinate (G) at (29, 43.5);
+	\draw [ultra thick , red!50, domain=17:29] plot(\x , {49.45-0.1*\x});
+	\foreach \n in {A,...,G} \fill (\n) ellipse (3pt and 15pt);
+	\foreach \n in {17,19,...,31} \draw (\n,15) --++ (0,-3) node [below] {\Large \(\n\)};
+	\foreach \n in {10,12.5,...,27.5} \draw (15,2*\n) --++ (-0.5,0) node [left] {\Large \(\n\)};
+\end{tikzpicture}
+
+\end{document}

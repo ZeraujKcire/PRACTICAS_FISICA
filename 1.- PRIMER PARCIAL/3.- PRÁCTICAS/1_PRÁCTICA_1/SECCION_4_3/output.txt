@@ -1,0 +1,6 @@
+(Intercept)      Tiempo 
+ -0.3221998   2.2836232 
+[1] " --- ERROR ESTÁNDAR DEL MÉTODO DE MÍNIMOS CUADRADOS --- "
+              Estimate Std. Error    t value  Pr(>|t|)
+(Intercept) -0.3221998   2.253638 -0.1429688 0.8953774
+Tiempo       2.2836232   1.128539  2.0235226 0.1361922
