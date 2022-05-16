@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.5.9)  5 MAY 2022 21:54
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.5.9)  15 MAY 2022 20:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count163
 \c@section=\count164
@@ -174,6 +174,9 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \titlewidthlast=\dimen152
 \titlewidthfirst=\dimen153
 )
+(/usr/share/texlive/texmf-dist/tex/latex/doublestroke/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
 
 Package fontspec Info: Font family 'Century_modern.ttf(0)' created for font
 (fontspec)             'Century_modern.ttf' with options
@@ -210,7 +213,7 @@ tex-text;"
 dflt;mapping=tex-text;"
 
 \symitalics=\mathgroup6
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 32.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 33.
 
 (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -219,8 +222,7 @@ Package tocbibind Info: The document has section divisions on input line 50.
 
 Package tocbibind Note: Using section or other style headings.
 
-))
-No file PRACTICA_6.aux.
+)) (./PRACTICA_6.aux)
 \openout1 = `PRACTICA_6.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -234,7 +236,7 @@ LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
 .
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 3.
@@ -356,15 +358,88 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-] [1]
-(./PRACTICA_6.aux) ) 
-Here is how much of TeX's memory you used:
- 5085 strings out of 481772
- 127591 string characters out of 5936452
- 413820 words of memory out of 5000000
- 22042 multiletter control sequences out of 15000+600000
- 535129 words of font info for 59 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 46i,4n,69p,274b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
+]
 
-Output written on PRACTICA_6.pdf (2 pages).
+Package fontspec Info: Font family 'Century_modern.ttf(2)' created for font
+(fontspec)             'Century_modern.ttf' with options
+(fontspec)             [Ligatures=TeX,BoldFont = bodonibi,ItalicFont = Century
+(fontspec)             modern italic2.ttf,BoldItalicFont =
+(fontspec)             bodonibi,SmallCapsFont =
+(fontspec)             lmromancaps10-regular.otf,LetterSpace = -5].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[Century_modern.ttf]/OT:script=latn;language=dflt;le
+tterspace=-5;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"[lmromancaps10-regular.otf]/OT:script=latn;language=
+dflt;letterspace=-5;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[bodonibi.ttf]/OT:script=latn;language=dflt;lettersp
+ace=-5;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"[lmromancaps10-regular.otf]/OT:script=latn;language=
+dflt;letterspace=-5;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"[Century modern
+(fontspec)             italic2.ttf]/OT:script=latn;language=dflt;letterspace=-5
+;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"[lmromancaps10-regular.otf]/OT:script=latn;language=
+dflt;letterspace=-5;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[bodonibi.ttf]/OT:script=latn;language=dflt;lettersp
+ace=-5;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"[lmromancaps10-regular.otf]/OT:script=latn;language=
+dflt;letterspace=-5;mapping=tex-text;"
+
+File: 1_INTRO/direcciones.png Graphic file (type bmp)
+<1_INTRO/direcciones.png>
+
+Overfull \hbox (16.06636pt too wide) in paragraph at lines 16--27
+[]$[]$  $[]$ 
+ []
+
+File: 1_INTRO/seno.png Graphic file (type bmp)
+<1_INTRO/seno.png>
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 4
+0.
+(/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+)
+Overfull \hbox (16.06636pt too wide) in paragraph at lines 30--44
+[]$[]$  $[]$ 
+ []
+
+File: 1_INTRO/distancia.png Graphic file (type bmp)
+<1_INTRO/distancia.png>
+
+Overfull \hbox (16.06638pt too wide) in paragraph at lines 47--67
+[]$[]$  $[]$ 
+ []
+
+File: 1_INTRO/dos_rendijas.png Graphic file (type bmp)
+<1_INTRO/dos_rendijas.png>
+[1]
+File: 1_INTRO/fran.png Graphic file (type bmp)
+<1_INTRO/fran.png>
+
+Overfull \hbox (16.06638pt too wide) in paragraph at lines 85--103
+[]$[]$  $[]$ 
+ []
+
+File: 1_INTRO/grafica.png Graphic file (type bmp)
+<1_INTRO/grafica.png>
+[2] (./PRACTICA_6.bbl) [3] (./PRACTICA_6.aux) ) 
+Here is how much of TeX's memory you used:
+ 5241 strings out of 481772
+ 130846 string characters out of 5936452
+ 417443 words of memory out of 5000000
+ 22160 multiletter control sequences out of 15000+600000
+ 539457 words of font info for 82 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 46i,10n,69p,317b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on PRACTICA_6.pdf (4 pages).

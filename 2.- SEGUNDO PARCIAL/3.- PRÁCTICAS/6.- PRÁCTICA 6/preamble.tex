@@ -9,7 +9,7 @@
 \usepackage{graphicx}
 \usepackage{titlesec} 
 % \usepackage{setspace}
-% \usepackage{dsfont}
+\usepackage{dsfont}
 % \usepackage{bookmark}
 % )))
 
@@ -25,6 +25,7 @@
 % === COMANDOS === (((
 \newcommand{\dis}{\displaystyle}
 \newcommand{\qed}{\hspace{0.5cm}\rule{0.16cm}{0.4cm}}
+\newcommand{\micita}[1]{\([\)\cite{#1}\(]\)}
 \newcommand{\operator}[1]{\mathop{\vphantom{\sum}\mathchoice{ \vcenter{\hbox{\huge $#1$}} }
 {\vcenter{ \hbox{\Large $#1$}} }{#1}{#1}}\displaylimits}
 \newcommand{\suma}{\operator{ \includegraphics[scale=0.09]{IMAGENES/Sigma.png}} }
@@ -38,7 +39,7 @@
 % )))
 
 % === SECCIONES === (((
-\titleformat*{\section}{\large\normalfont\bfseries\centering}
+\titleformat*{\section}{\large\normalfont\bfseries}
 \titleformat*{\subsection}{\large\itshape \centering}
 % \setcounter{secnumdepth}{0}
 \renewcommand*{\contentsname}{\large\textbf{CONTENIDOS.}}
