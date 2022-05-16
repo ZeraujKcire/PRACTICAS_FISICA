@@ -1,0 +1,136 @@
+\documentclass[12pt,a4paper]{article}
+\input{preamble.tex}
+\begin{document}
+
+\portada
+
+\section{RESUMEN.} % (((
+% )))
+
+\section{INTRODUCCIÓN.} % (((
+Si el ángulo es pequeño, entonces el \(OPQ\) es semejante a \(S_1S_1 \delta\).
+\begin{figure}[hbtp!]
+	\centering
+	\includegraphics[width= 0.8 \linewidth]{1_INTRO/geometria.png}
+	\caption{Experimento de la Doble Rendija de Young.}
+	\label{fig:constructiva}
+\end{figure}\\
+La interferencia es constructiva siempre que \(r_1-r_2 = m \lambda\), para algún \(m \in \mathds{Z}\). Es decir
+\begin{equation}
+	d \sin \theta = m \lambda , \hspace{1cm} m \in \mathds{Z} .
+	\label{eq:young}
+\end{equation}
+donde se alcanzará un máximo cuando \(m \in \mathds{Z}\). Y si \(m=k/2\), con \(k\) impar, entonces se alcanzará un mínimo. Además, el campo eléctrico \(E_i\) en el punto \(S_i\) está dado por
+\begin{equation}
+	\begin{array}{rcl}
+		E_1 & = & E_0 \sin wt \\[2mm]
+		E_2 & = & E_0 \sin (wt+ \phi)
+	\end{array}
+	\label{eq:campos_electricos}
+\end{equation}
+Y por el principio de superposición, tendremos que el campo eléctrico total es:
+\begin{equation}
+	E = E_1 + E_2 = (2E_0 \cos \beta) \sin (wt+ \beta).
+	\label{eq:campo_total}
+\end{equation}
+donde \(\beta = \phi /2\). Recordamos que \(\beta = \dfrac{2 \pi \sin \theta}{\lambda}\), y la intensidad para el ángulo \(\theta\) está dada por
+\begin{equation}
+	I(\theta) = 4I_0 \cos ^2 \beta = 4I_0 \cos ^2 \bigg(\dfrac{\pi d \sin \theta}{\lambda}\bigg).
+	\label{eq:intensidad}
+\end{equation}
+Los máximos son alcnazados cuando
+\begin{equation}
+	W \sin \theta = n \lambda , \hspace{1cm} n \in \mathds{Z}
+	\label{eq:maximos}
+\end{equation}
+y análogamente al caso anterior, se tiene que
+\begin{equation}
+	\theta = \arctan (y/L).
+	\label{eq:theta}
+\end{equation}
+% )))
+
+\section{METODOLOGÍA.} % (((
+
+\subsection{--- Difracción de una Rendija Simple y Doble Rendija ---} % (((
+\label{sub:difraccion_simple}
+
+\subsubsection{Rendija Simple.} % (((
+\label{subs:rendija_simple}
+% )))
+
+\subsubsection{Doble Rendija.} % (((
+\label{subs:doble_rendija}
+% )))
+
+
+% )))
+
+\subsection{--- Rejilla de Difracción. ---} % (((
+\label{sub:reijlla_de_difraccion}
+% )))
+
+% )))
+
+\section{RESULTADOS.} % (((
+
+\subsection{--- Difracción de una Rendija Simple y Doble Rendija ---} % (((
+\label{sub:resul_difraccion_simple}
+
+\subsubsection{Rendija Simple.} % (((
+\label{subs:resul_rendija_simple}
+% )))
+
+\subsubsection{Doble Rendija.} % (((
+\label{subs:resul_doble_rendija}
+% )))
+
+\begin{table}[hbtp!]
+	\centering
+	\caption{Obtención de la longitud de onda mediante el emplleo de la difracción de una rendija simple.}
+	\begin{tabular}{*{7}{l}}
+		\multicolumn{5}{c|}{Datos} & \multicolumn{2}{c}{Cálculos} \\ \hline
+		Color & \(n\) & \(W\) & \(y\) & \(L\) & \(\theta = \arctan (y/L) \) & \(W \sin \theta = n \lambda\) \\ \hline
+		Rojo &&&&&& \\ \hline
+		Verde &&&&&& \\ \hline
+		Azul &&&&&& \\ \hline
+	\end{tabular}
+	\label{tab:longitud_onda}
+\end{table}
+
+% )))
+
+\subsection{--- Rejilla de Difracción. ---} % (((
+\label{sub:resul_reijlla_de_difraccion}
+\begin{table}[hbtp!]
+	\centering
+	\caption{Obtenciójn del rango de la longitud de onda utiilizando una rejilla de difracción de \(6000\) rendijas \(/cm\).} 
+	\begin{tabular}{*{7}{l}}
+		\hline 
+		\multicolumn{5}{c|}{Datos} & \multicolumn{2}{c}{Cálculos} \\ \hline
+		Color & \(A\) & \(L\) & \(y_1\) & \(y_2\) & \(\lambda _1\) & \(\lambda _2\) \\ \hline
+		Viloeta &&&&&& \\ \hline
+		Azul &&&&&& \\ \hline
+		Verde &&&&&& \\ \hline
+		Amarillo &&&&&& \\ \hline
+		Anaranjado &&&&&& \\ \hline
+		Rojo &&&&&& \\ \hline
+	\end{tabular}
+	\label{tab:longtud_por_difraccion}
+\end{table}
+% )))
+
+% )))
+
+\section{DISCUSIÓN DE RESULTADOS Y CONCLUSIONES.} % (((
+% )))
+
+% === REFERENCIAS === (((
+% \bibliography{Referencias}
+% \bibliographystyle{unsrt}
+% )))
+
+\section{APÉNDICE.} % (((
+% )))
+
+\end{document}
