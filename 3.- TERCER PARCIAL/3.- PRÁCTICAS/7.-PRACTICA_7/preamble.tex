@@ -4,6 +4,7 @@
 \usepackage{amsfonts}
 \usepackage{multicol}
 \usepackage{amssymb}
+\usepackage{listings} 
 % \usepackage{expl3}
 \usepackage{fontspec}
 \usepackage{fullpage}
@@ -96,4 +97,23 @@
 	% \singlespacing
 	% \newpage
 } 
+% )))
+
+% === LST-LISTINGS PARA VER EL CÓDIGO === (((
+\usepackage{xcolor}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+  backgroundcolor  =  \color{backcolour},
+  commentstyle     =  \color{gray},
+  numberstyle      =  \tiny\color{gray},
+  stringstyle      =  \color{purple},
+  basicstyle       =  \ttfamily\footnotesize,
+  numbers          =  left,
+  numbersep        =  5pt,
+  keywordstyle     =  \color{blue},
+  identifierstyle  =  \color{orange},
+}
+
+\lstset{style=mystyle}
 % )))

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.5.9)  16 MAY 2022 12:01
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.5.9)  16 MAY 2022 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -437,16 +437,12 @@ LaTeX Font Info:    Trying to load font information for U+dsrom on input line 1
 (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) [1] [2]
-(./Practica_7.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(./Practica_7.aux) ) 
 Here is how much of TeX's memory you used:
- 5301 strings out of 481772
- 131524 string characters out of 5936452
+ 5300 strings out of 481772
+ 131515 string characters out of 5936452
  424184 words of memory out of 5000000
- 22226 multiletter control sequences out of 15000+600000
+ 22225 multiletter control sequences out of 15000+600000
  539465 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  46i,9n,69p,274b,294s stack positions out of 5000i,500n,10000p,200000b,80000s
