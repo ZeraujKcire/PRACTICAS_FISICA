@@ -377,6 +377,23 @@ Así pues, con todo lo desarrollado se pudo recrear el experimento de Young, el 
 			(0.4680\pm0.0002)cm\\
 		\end{align*}	
 	\end{itemize}
+	\newpage
+	\subsection{--- Patrón de Irradiancia en Matlab ---} % (((
+	\label{sub:patron_irradiancia}
+	\begin{lstlisting}[language = matlab]
+I = imread('08_y_25.jpg');
+figure; imshow(I); title('Imagen original');
+
+J=rgb2gray(I);
+format short
+
+a=sum(J);
+a=a/max(a);
+figure; plot(a); title('a=0.08mm, d=0.25mm ');
+ C=(max(a) -min(a))/(max(a) +min(a));
+	\end{lstlisting}
+	Código utilizado para gnerar las gráficas del patrón de irradiancia experimental. En el código se muestra para el caso en el que se utiliza la imagen respectiva a el uso de la rendija de \(a=0.08mm\) y \(d=025mm\).
+	% )))
 % )))
 
 \end{document}
