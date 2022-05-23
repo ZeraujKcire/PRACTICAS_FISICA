@@ -1,8 +1,11 @@
 
 % === PAQUETES === (((
 \usepackage{amsmath}
+\usepackage{colortbl}
 \usepackage{amsfonts}
 \usepackage{multicol}
+\usepackage{multirow}
+\usepackage{xcolor}
 \usepackage{amssymb}
 \usepackage{listings} 
 % \usepackage{expl3}
@@ -41,8 +44,9 @@
 % )))
 
 % === SECCIONES === (((
-\titleformat*{\section}{\large\normalfont\bfseries\centering}
-\titleformat*{\subsection}{\large\itshape \centering}
+\titleformat*{\section}{\large\normalfont\bfseries}
+\titleformat*{\subsection}{\large\itshape}
+\titleformat*{\subsubsection}{\bfseries\centering}
 % \setcounter{secnumdepth}{0}
 \renewcommand*{\contentsname}{\large\textbf{CONTENIDOS.}}
 \usepackage[nottoc,numbib]{tocbibind}
